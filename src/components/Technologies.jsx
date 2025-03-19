@@ -1,5 +1,5 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandLaravel, TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
 import { SiBootstrap } from "react-icons/si";
 import { DiJavascript1 } from "react-icons/di";
 import { SiJquery } from "react-icons/si";
@@ -58,7 +58,7 @@ export const Technologies = () => {
         </motion.div>
         {/* variants={iconVariation(2)} initial="initial" animate="animate" */}
         <motion.div
-          variants={iconVariation(5)}
+          variants={iconVariation(3.5)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -75,6 +75,24 @@ export const Technologies = () => {
           title="jquery"
         >
           <SiJquery className="text-5xl text-cyan-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariation(4)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+          title="laravel"
+        >
+          <TbBrandLaravel className="text-5xl text-red-500"/>
+        </motion.div>
+        <motion.div
+          variants={iconVariation(1.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+          title="tailwind"
+        >
+          <TbBrandTailwind className="text-5xl text-cyan-400"/>
         </motion.div>
       </motion.div>
     </div>
